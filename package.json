@@ -4,5 +4,8 @@
     },
     "scripts": {
         "build": "npx esbuild --bundle ./src/app.ts --outdir=out"
+    },
+    "dependencies": {
+        "rxjs": "^6.6.0"
     }
 }

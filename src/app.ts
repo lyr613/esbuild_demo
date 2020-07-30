@@ -1,4 +1,5 @@
 import { of_user } from './util'
+import { timer } from 'rxjs'
 
 main()
 
@@ -7,6 +8,8 @@ function main() {
         age: 10,
         name: 'mack',
     }
-    const u2 = of_user(u, { name: 'miu' })
-    console.log(u2)
+    timer(0, 1000).subscribe((n) => {
+        const u2 = of_user(u, { name: 'miu', age: n })
+        console.log(n, u2)
+    })
 }
