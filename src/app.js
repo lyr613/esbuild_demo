@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
-const { timer } = require('rxjs')
-const { map, take } = require('rxjs/operators')
+const { shuyang } = require('./other')
+
 main()
 
 function main() {
@@ -10,13 +10,5 @@ function main() {
     console.log('文件列表:', fils)
     console.log('------')
     console.log('开始数羊')
-    timer(0, 1000)
-        .pipe(
-            map((n) => n + 1),
-            map((n) => n + '只羊'),
-            take(5),
-        )
-        .subscribe((n) => {
-            console.log(n)
-        })
+    shuyang()
 }
