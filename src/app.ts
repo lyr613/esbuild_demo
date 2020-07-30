@@ -1,6 +1,6 @@
-const fs = require('fs')
-const path = require('path')
-const { shuyang } = require('./other')
+import * as fs from 'fs'
+import * as path from 'path'
+import { shuyang } from './other'
 
 main()
 

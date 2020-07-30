@@ -3,8 +3,8 @@
         "esbuild": "^0.6.10"
     },
     "scripts": {
-        "dev": "npx esbuild --bundle ./src/app.js  --sourcemap  --external:fs --external:path --outdir=out",
-        "build": "npx esbuild --bundle ./src/app.js --minify --external:fs --external:path --outdir=out"
+        "dev": "npx esbuild --bundle ./src/app.ts  --sourcemap  --external:fs --external:path --outdir=out",
+        "build": "npx esbuild --bundle ./src/app.ts --minify --external:fs --external:path --outdir=out"
     },
     "dependencies": {
         "@types/node": "^14.0.27",
