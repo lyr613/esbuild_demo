@@ -9,10 +9,11 @@
             "request": "launch",
             "name": "Launch Program",
             "skipFiles": ["<node_internals>/**"],
-            "program": "${workspaceFolder}/src/app.ts",
+            "program": "${workspaceFolder}/out/app.js",
             "preLaunchTask": "develop",
             "console": "integratedTerminal",
-            "outFiles": ["${workspaceFolder}/out/**/*.js"]
+            "outFiles": ["${workspaceFolder}/out/**/*.js"],
+            "sourceMaps": true
         }
     ]
 }
