@@ -9,9 +9,10 @@
             "request": "launch",
             "name": "Launch Program",
             "skipFiles": ["<node_internals>/**"],
-            "program": "${workspaceFolder}/out/app.js",
+            "program": "${workspaceFolder}/src/app.js",
             "preLaunchTask": "develop",
-            "console": "externalTerminal"
+            "console": "integratedTerminal",
+            "outFiles": ["${workspaceFolder}/out/**/*.js"]
         }
     ]
 }
