@@ -1,0 +1,8 @@
+{
+    "devDependencies": {
+        "esbuild": "^0.6.10"
+    },
+    "scripts": {
+        "build": "npx esbuild --bundle ./src/app.ts --outdir=out"
+    }
+}
